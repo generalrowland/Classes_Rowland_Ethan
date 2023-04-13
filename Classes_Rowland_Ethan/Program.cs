@@ -6,7 +6,17 @@ namespace Classes_Rowland_Ethan
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            //
+            Greetings greetings = new Greetings(); 
+            //
+            greetings.Welcome();
+
+            //
+            Console.WriteLine("What is your name squire?");
+            string userName = Console.ReadLine();
+
+            //
+            greetings.Hello(userName);
         }
     }
 }
